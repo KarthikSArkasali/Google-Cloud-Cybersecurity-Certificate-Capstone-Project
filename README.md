@@ -279,7 +279,7 @@ The current VM **cc-app-01** should be listed under VM instances. This is the vu
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-      Shut down the vulnerable VM
+    Shut down the vulnerable VM
 
 **Next**, create a new VM from a snapshot. This snapshot has already been created as part of Cymbal Retail's long term data backup plan.
 
@@ -344,7 +344,7 @@ Wait for the **cc-app-02** VM to be stopped before you continue.
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-     Create a new VM from existing snapshot
+   Create a new VM from existing snapshot
 
 **Challenge: Delete the compromised VM**
 
@@ -352,7 +352,7 @@ Delete the compromised VM **cc-app-01**.
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-     Delete the compromised VM
+    Delete the compromised VM
 
 By following these steps, you have effectively created a new VM from the snapshot, ensuring it is free from malware and misconfigurations. You also deleted the compromised VM, eliminating the source of the security breach.
 
@@ -378,7 +378,7 @@ Switch the access control to uniform and remove permissions for the **allUsers**
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-      Modify storage bucket access.
+    Modify storage bucket access.
 
 By following these steps, you have effectively prevented public access to the bucket, switched to uniform bucket-level access control, and removed all user permissions, addressing the **Public bucket ACL, Bucket policy only disabled,** and **Bucket logging disabled findings**.
 
@@ -394,7 +394,7 @@ Create a new firewall rule. This rule must restrict SSH access to only authorize
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-      Restrict SSH access
+    Restrict SSH access
 
 # Task 5. Fix the firewall configuration
 
@@ -406,7 +406,7 @@ Delete the **default-allow-icmp, default-allow-rdp,** and **default-allow-ssh** 
 
 By deleting these rules, you have restricted access to these protocols, limiting the potential for unauthorized access attempts and reducing the attack surface of your network.
 
-      Customize firewall rules
+    Customize firewall rules
 
 **Challenge: Enable logging**
 
@@ -416,7 +416,7 @@ Enabling logging allows you to track and analyze the traffic that is allowed by 
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-      Enable logging
+    Enable logging
 
 By customizing firewall rules and enabling logging, you've addressed the **Open SSH port, Open RDP port,** and **Firewall rule logging disabled** findings. The new firewall rule better protects the network and improves network visibility.
 
@@ -432,8 +432,8 @@ After diligently addressing the vulnerabilities identified in the PCI DSS 3.2.1 
 
 All major vulnerabilities are now resolved.
 
-        Note: While you addressed the high and medium severity vulnerabilities, the flow logs remain disabled for a number of subnetworks. This finding will still be 
-        visible on the report after you have completed the remediation tasks, as this relates to this lab environment.
+    Note: While you addressed the high and medium severity vulnerabilities, the flow logs remain disabled for a number of subnetworks. This finding will still be 
+    visible on the report after you have completed the remediation tasks, as this relates to this lab environment.
 
 **Conclusion**
 
