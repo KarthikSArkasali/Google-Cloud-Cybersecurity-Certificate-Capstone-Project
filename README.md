@@ -97,7 +97,7 @@
        Note: You can view the menu with a list of Google Cloud Products and Services by clicking the Navigation menu at the top-left.
    ![Image](https://github.com/user-attachments/assets/dfaaf2e9-f92b-4bf2-8c38-09396e887d11)
 
-**Task 1. Analyze the data breach and gather information**
+# Task 1. Analyze the data breach and gather information
 
    One morning, the security team detects unusual activity within their systems. Further investigation into this activity quickly reveals that the company has suffered a 
    massive security breach across its applications, networks, systems, and data repositories. Attackers gained unauthorized access to sensitive customer information, 
@@ -261,7 +261,7 @@ Which of the following findings are listed as high severity findings?
  * Firewall rule logging disabled, Compute secure boot disabled, Public IP address, and Bucket logging disabled
  * Public bucket ACL, Public IP address, Open SSH port, and Open RDP port (Correct Answer)
 
-**Task 2. Fix the Compute Engine vulnerabilities**
+# Task 2. Fix the Compute Engine vulnerabilities
 
 In this task, you'll shut down the vulnerable VM cc-app-01, and create a new VM from a snapshot taken before the malware infection. VM snapshots are effective in restoring the system to a clean state, and ensures that the new VM will not be infected with the same malware that compromised the original VM.
 
@@ -356,7 +356,7 @@ Click **Check my progress** to verify that you have completed this task corr
 
 By following these steps, you have effectively created a new VM from the snapshot, ensuring it is free from malware and misconfigurations. You also deleted the compromised VM, eliminating the source of the security breach.
 
-**Task 3. Fix Cloud Storage bucket permissions**
+# Task 3. Fix Cloud Storage bucket permissions
 
 In this task, you'll revoke public access to the storage bucket and switch to uniform bucket-level access control, significantly reducing the risk of data breaches. By removing all user permissions from the storage bucket, you can prevent unauthorized access to the data stored within.
 
@@ -382,7 +382,7 @@ Click **Check my progress** to verify that you have completed this task corr
 
 By following these steps, you have effectively prevented public access to the bucket, switched to uniform bucket-level access control, and removed all user permissions, addressing the **Public bucket ACL, Bucket policy only disabled,** and **Bucket logging disabled findings**.
 
-**Task 4. Limit firewall ports access**
+# Task 4. Limit firewall ports access
 
 In this task, you'll restrict access to RDP and SSH ports to only authorized source networks to minimize the attack surface and reduce the risk of unauthorized remote access.
 
@@ -396,7 +396,7 @@ Click **Check my progress** to verify that you have completed this task corr
 
       Restrict SSH access
 
-**Task 5. Fix the firewall configuration**
+# Task 5. Fix the firewall configuration
 
 In this task, you'll delete three specific VPC firewall rules that are responsible for allowing unrestricted access to certain network protocols, namely ICMP, RDP, and SSH, from any source within the VPC network. Then, you'll enable logging on the remaining firewall rules.
 
@@ -420,7 +420,7 @@ Click **Check my progress** to verify that you have completed this task corr
 
 By customizing firewall rules and enabling logging, you've addressed the **Open SSH port, Open RDP port,** and **Firewall rule logging disabled** findings. The new firewall rule better protects the network and improves network visibility.
 
-**Task 6. Verify compliance**
+# Task 6. Verify compliance
 
 After diligently addressing the vulnerabilities identified in the PCI DSS 3.2.1 report, it's crucial to verify the effectiveness of your remediation efforts. In this task, you'll run the report again to ensure that the previously identified vulnerabilities have been successfully mitigated and no longer pose a security risk to the environment.
 
