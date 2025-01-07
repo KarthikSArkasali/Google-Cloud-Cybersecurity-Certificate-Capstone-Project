@@ -437,26 +437,31 @@ All major vulnerabilities are now resolved.
 
 **Conclusion**
 
-Great work!
+    Great work!
 
-You have helped the security team at Cymbal Bank to mitigate the impact of the data breach, address the identified vulnerabilities, and significantly enhanced the security posture of Cymbal Bank’s Google Cloud environment.
+    You have helped the security team at Cymbal Bank to mitigate the impact of the data breach, address the identified vulnerabilities, and significantly enhanced the 
+    security posture of Cymbal Bank’s Google Cloud environment.
 
-First, you examined and analyzed the vulnerabilities and findings in Google Cloud Security Command Centre.
+    First, you examined and analyzed the vulnerabilities and findings in Google Cloud Security Command Centre.
 
-Next, you shut the old VM down and created a new VM from a snapshot taken before the malware infection.
+    Next, you shut the old VM down and created a new VM from a snapshot taken before the malware infection.
 
-Then, you fixed the cloud storage permissions by revoking public access to the storage bucket and switching to uniform bucket-level access control. You also removed all user permissions from the storage bucket.
+    Then, you fixed the cloud storage permissions by revoking public access to the storage bucket and switching to uniform bucket-level access control. You also removed all 
+    user permissions from the storage bucket.
 
-Next, you fixed the firewall rules by deleting the default-allow-icmp, default-allow-rdp, and default-allow-ssh firewall rules, and enabling logging for the remaining firewall rules.
+    Next, you fixed the firewall rules by deleting the default-allow-icmp, default-allow-rdp, and default-allow-ssh firewall rules, and enabling logging for the remaining 
+    firewall rules.
 
-Finally, you run a compliance report to confirm that the vulnerability issues have been remediated.
+    Finally, you run a compliance report to confirm that the vulnerability issues have been remediated.
 
-Remember, as a security analyst it is crucial to maintain regular security audits and implement ongoing monitoring practices for continued protection against evolving threats and vulnerabilities.
+    Remember, as a security analyst it is crucial to maintain regular security audits and implement ongoing monitoring practices for continued protection against evolving 
+    threats and vulnerabilities.
 
 **End your lab**
 
-Before you **end the lab**, make sure you’re satisfied that you’ve completed all the tasks. When you're ready, click **End Lab** and then click **Submit**.
+    Before you end the lab, make sure you’re satisfied that you’ve completed all the tasks. When you're ready, click End Lab and then click Submit.
 
-Ending the lab will remove your access to the lab environment, and you won’t be able to access the work you've completed in it again.
+    Ending the lab will remove your access to the lab environment, and you won’t be able to access the work you've completed in it again.
 
-Copyright 2024 Google LLC All rights reserved. Google and the Google logo are trademarks of Google LLC. All other company and product names may be trademarks of the respective companies with which they are associated.
+    Copyright 2024 Google LLC All rights reserved. Google and the Google logo are trademarks of Google LLC. All other company and product names may be trademarks of the 
+    respective companies with which they are associated.
