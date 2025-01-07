@@ -8,3 +8,4 @@ You’ll be given a scenario, and a set of tasks to complete in Google Cloud Sec
 There are also a number of challenges in the lab. A challenge is a task where you will be asked to complete the task on your own without instructions.
 
 By successfully completing this lab, you will demonstrate your ability to identify, prioritize, and remediate security vulnerabilities and misconfigurations within the cloud environment. These are essential skills to enhance the security posture of Google Cloud environments, reducing the risk of data breaches, unauthorized access, and other security incidents.
+
