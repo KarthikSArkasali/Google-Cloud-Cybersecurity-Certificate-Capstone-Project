@@ -57,4 +57,4 @@
    * The temporary credentials that you must use for this lab
    * Other information, if needed, to step through this lab
      
-        Note: If you need to pay for the lab, a pop-up opens for you to select your payment method.
+         Note: If you need to pay for the lab, a pop-up opens for you to select your payment method.
