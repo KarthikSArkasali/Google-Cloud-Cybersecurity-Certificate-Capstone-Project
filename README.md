@@ -1,6 +1,6 @@
- # Respond and Recover from a data breach
+# Respond and Recover from a data breach
 
- **Activity overview**
+**Activity overview**
 
   This lab is part of the capstone project. In this lab, you’ll apply your knowledge of cloud cybersecurity to identify and remediate vulnerabilities.
 
@@ -125,4 +125,49 @@
 
  You'll note that there are both high and medium severity findings relating to the **Cloud Storage bucket**, the **Compute Instance virtual machine**, and the **firewall**.
 
- 
+     Which three resource types are listed with high severity findings?
+        Bucket, Subnetwork, and ServiceAccountKey
+        Network, Firewall, and Bucket
+        Bucket, compute.Instance, and Firewall (Correct Answer)
+        Network, Subnetwork, and compute.Instance
+
+ **Next**, navigate to the PCI DSS report.
+
+   **4.** In the **Security Command Center menu**, click **Compliance**. The Compliance page opens.
+   
+   **5.** In the **Google Cloud compliance standards** section, click **View details** in the **PCI DSS 3.2.1** tile. The PCI DSS 3.2.1 report opens.
+   
+   **6.** Click on the **Findings** column to sort the findings and display the active findings at the top of the list.
+
+     Note: Make sure to follow these steps to assess the PCI report, and do not refresh the page, as the required filters will be removed, and the correct information won't 
+     be displayed.
+
+   The Payment Card Industry Data Security Standard (PCI DSS) is a set of security requirements that organizations must follow to protect sensitive cardholder data. As a 
+   retail company that accepts and processes credit card payments, Cymbal Retail must also ensure compliance with the PCI DSS requirements, to protect cardholder data.
+
+   As you examine the PCI DSS 3.2.1 report, notice that it lists the rules that are non-compliant, which relate to the data breach:
+
+* **Firewall rule logging should be enabled so you can audit network access:** This medium severity finding indicates that firewall rule logging is disabled, meaning that 
+    there is no record of which firewall rules are being applied and what traffic is being allowed or denied. This is a security risk as it makes it difficult to track and 
+    investigate suspicious activity.
+* **Firewall rules should not allow connections from all IP addresses on TCP or UDP port 3389:** This high severity finding indicates that the firewall is configured to 
+    allow Remote Desktop Protocol (RDP) traffic for all instances in the network from the whole internet. This is a security risk as it allows anyone on the internet to 
+    connect to the RDP port on any instance in the network.
+* **Firewall rules should not allow connections from all IP addresses on TCP or SCTP port 22:** This high severity finding indicates that the firewall is configured to allow 
+    Secure Shell (SSH) traffic to all instances in the network from the whole internet. SSH is a protocol that allows secure remote access to a computer. If an attacker can 
+    gain access to a machine through SSH, they could potentially steal data, install malware, or disrupt operations.
+* **VMs should not be assigned public IP addresses:** This high severity finding indicates that a particular IP address is actively exposed to the public internet and is 
+    potentially accessible to unauthorized individuals. This finding is considered a potential security risk because it could allow attackers to scan for vulnerabilities or 
+    launch attacks on the associated resource.
+* **Cloud Storage buckets should not be anonymously or publicly accessible:** This high severity finding indicates that there is an Access Control List (ACL) entry for the 
+    storage bucket that is publicly accessible which means that anyone on the internet can read files stored in the bucket. This is a high-risk security vulnerability that 
+    needs to be prioritized for remediation.
+* **Instances should not be configured to use the default service account with full access to all Cloud APIs:** This medium severity finding indicates that a particular 
+    identity or service account has been granted full access to all Google Cloud APIs. This finding is considered a significant security risk because it grants the identity 
+    or service account the ability to perform any action within the Google Cloud environment, including accessing sensitive data, modifying configurations, and deleting 
+    resources.
+  
+Since you're focusing on identifying and remediating the issues related to the security incident, please disregard the following findings as they do not relate to the remediation tasks you’re completing:
+
+* **VPC Flow logs should be Enabled for every subnet VPC Network:** There are a number of low severity findings for Flow Logs disabled. This indicates that Flow Logs are not     nabled for a number of subnetworks in the Google Cloud project used for this lab. This is a potential security risk because Flow Logs provide valuable insights into 
+    network traffic patterns, which can help identify suspicious activity and investigate security incidents.
