@@ -136,11 +136,11 @@
    **4.** In the **Security Command Center menu**, click **Compliance**. The Compliance page opens.
    
    **5.** In the **Google Cloud compliance standards** section, click **View details** in the **PCI DSS 3.2.1** tile. The PCI DSS 3.2.1 report opens.
-   
+   ![1 Compliance](https://github.com/user-attachments/assets/7f3b7745-0285-4f29-b6dd-10648b2f9e89)
    **6.** Click on the **Findings** column to sort the findings and display the active findings at the top of the list.
-
-     Note: Make sure to follow these steps to assess the PCI report, and do not refresh the page, as the required filters will be removed, and the correct information won't 
-     be displayed.
+    ![2  Findings](https://github.com/user-attachments/assets/53363d45-315e-4231-8db1-f3bb43f75bb2)
+      Note: Make sure to follow these steps to assess the PCI report, and do not refresh the page, as the required filters will be removed, and the correct information won't 
+      be displayed.
 
    The Payment Card Industry Data Security Standard (PCI DSS) is a set of security requirements that organizations must follow to protect sensitive cardholder data. As a 
    retail company that accepts and processes credit card payments, Cymbal Retail must also ensure compliance with the PCI DSS requirements, to protect cardholder data.
@@ -198,10 +198,10 @@ Overall, these findings indicate a critical lack of security controls and non-co
 
 **Next**, navigate to the Security Command Center, and filter the findings for further examination and analysis of the vulnerabilities in the Google Cloud environment.
 
-  **7.** In the Google Cloud console, in the Navigation menu (navigation_menu), click Security > Findings. The Findings page opens.
+  **7.** In the Google Cloud console, in the **Navigation menu (navigation_menu)**, click **Security > Findings**. The **Findings** page opens.
   
-  **8.** In the Quick filters panel, in the Resource Type section, select the checkbox for the Google Cloud storage bucket resource type.
-  
+  **8.** In the **Quick filters** panel, in the **Resource Type** section, select the checkbox for the **Google Cloud storage bucket** resource type.
+  ![3 Bucket Misconfiguration](https://github.com/user-attachments/assets/0989d8c9-f715-4d50-8f3e-12d5eded0e02)
 The following active findings pertaining to the storage bucket should be listed:
 
 * **Public bucket ACL:** This finding is listed in the PCI DSS report, and indicates that anyone with access to the internet can read the data stored in the bucket.
@@ -213,9 +213,9 @@ These findings indicate that the bucket is configured with a combination of secu
       Note: Enabling logging for cloud resources is important in maintaining observability. However, you will not remediate the Bucket logging disabled finding in this lab 
       activity as this would require working with multiple projects. As a result, this finding will still be visible after you have completed the remediation tasks.
       
-   **9.** In the **Quick filters panel**, in the **Resource Type** section, uncheck **Google Cloud storage bucket**, andselect the checkbox for the **Google compute 
+   **9.** In the **Quick filters panel**, in the **Resource Type** section, uncheck **Google Cloud storage bucket**, and select the checkbox for the **Google compute 
      instance** resource type.
-
+     ![4  Compute Instance Mis](https://github.com/user-attachments/assets/7d668415-f410-4f0b-8b99-a091791423ed)
 The following active findings that pertain to the virtual machine named **cc-app-01** should be listed:
 
 * **Malware bad domain:** This finding indicates that a domain known to be associated with malware was accessed from the google.compute.instance named cc-app-01. Although 
@@ -241,7 +241,7 @@ The following active findings that pertain to the virtual machine named **cc-app
 
 **11.** In the **Quick filters** panel, in the **Resource Type** section, uncheck **Google compute instance**, and select the checkbox for the **Google compute firewall** 
    resource type.
-   
+   ![5  Compute Firewall](https://github.com/user-attachments/assets/fb800b1a-8151-466a-8190-257d1f4fd3c9)
 The following active findings should be listed that pertain to the firewall:
 
 * **Open SSH port:** This high severity finding indicates that the firewall is configured to allow Secure Shell (SSH) traffic to all instances in the network from the whole 
@@ -394,12 +394,13 @@ Create a new firewall rule. This rule must restrict SSH access to only authorize
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
-    Restrict SSH access
+    Restrict SSH access 
+![4 3 SSH Created](https://github.com/user-attachments/assets/11187a02-439b-48da-905f-64bc21dbe249)
 
 # Task 5. Fix the firewall configuration
 
 In this task, you'll delete three specific VPC firewall rules that are responsible for allowing unrestricted access to certain network protocols, namely ICMP, RDP, and SSH, from any source within the VPC network. Then, you'll enable logging on the remaining firewall rules.
-
+![4 2 Firwall Rule list](https://github.com/user-attachments/assets/6c86868c-09c6-43a1-bb91-f229bc273448)
 **Challenge: Customize firewall rules**
 
 Delete the **default-allow-icmp, default-allow-rdp,** and **default-allow-ssh** firewall rules. These rules are overly broad and by deleting them, you'll allow for a more secure and controlled network environment.
@@ -407,7 +408,7 @@ Delete the **default-allow-icmp, default-allow-rdp,** and **default-allow-ssh** 
 By deleting these rules, you have restricted access to these protocols, limiting the potential for unauthorized access attempts and reducing the attack surface of your network.
 
     Customize firewall rules
-
+![4 4 Delete SSH RDP](https://github.com/user-attachments/assets/09e99c72-7dcb-43da-929c-f9eecb1fbf4e)
 **Challenge: Enable logging**
 
 Enable logging for the remaining firewall rules **limit-ports** (the rule you created in a previous task) and **default-allow-internal**.
@@ -417,7 +418,8 @@ Enabling logging allows you to track and analyze the traffic that is allowed by 
 Click **Check my progress** to verify that you have completed this task correctly.
 
     Enable logging
-
+![4 5 Logging Allow internal](https://github.com/user-attachments/assets/fa3aa043-f8fb-4d43-ab06-ec1535837de5)
+![4 6 Logging Deny SSH](https://github.com/user-attachments/assets/b0d97139-8133-4065-98d3-1ae6e5954e85)
 By customizing firewall rules and enabling logging, you've addressed the **Open SSH port, Open RDP port,** and **Firewall rule logging disabled** findings. The new firewall rule better protects the network and improves network visibility.
 
 # Task 6. Verify compliance
