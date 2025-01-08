@@ -268,7 +268,7 @@ In this task, you'll shut down the vulnerable VM cc-app-01, and create a new VM 
   1. In the Google Cloud console, click the **Navigation menu (navigation_menu)**.
    
   2. Select **Compute Engine > VM instances**. The VM instances page opens.
-
+  ![1  VM Instance](https://github.com/user-attachments/assets/d881b613-1b9e-4aad-9a76-ec62ad4db294)
 The current VM **cc-app-01** should be listed under VM instances. This is the vulnerable VM that has been compromised and must be shut down.
 
   3. Select the checkbox for the **cc-app-01** VM.
@@ -280,6 +280,7 @@ The current VM **cc-app-01** should be listed under VM instances. This is the vu
 Click **Check my progress** to verify that you have completed this task correctly.
 
     Shut down the vulnerable VM
+![2  VM Stopped](https://github.com/user-attachments/assets/1b62d681-b559-465e-9169-61b6c236863a)
 
 **Next**, create a new VM from a snapshot. This snapshot has already been created as part of Cymbal Retail's long term data backup plan.
 
@@ -329,9 +330,9 @@ Wait for the **cc-app-02** VM to be stopped before you continue.
       
   25. Scroll down to the **Security and access** section, and under **Shielded VM**, select the checkbox for the **Turn on Secure Boot** option. This will address the 
       **Compute secure boot disabled** finding.
-    
+  
   26. Click **Save**.
-      
+    ![4  Secure Boot for VM 2](https://github.com/user-attachments/assets/f2ea916e-0d0c-460c-b923-f70312c8157e)   
   27. In the **Compute Engine** menu, select **VM instances**.
       
   28. Select the checkbox for the **cc-app-02** VM.
@@ -340,12 +341,12 @@ Wait for the **cc-app-02** VM to be stopped before you continue.
       
   30. A pop-up will appear asking you to confirm that the VM should be started, click **Start**.
       
-  31. The c**c-app-02** VM instance will restart and the **Secure Boot disabled** finding will be remediated.
+  31. The **cc-app-02** VM instance will restart and the **Secure Boot disabled** finding will be remediated.
 
 Click **Check my progress** to verify that you have completed this task correctly.
 
    Create a new VM from existing snapshot
-
+![3  VM 2 Created](https://github.com/user-attachments/assets/dfc6bf8f-4bce-4173-acf2-aa2fb3c4e5f5)
 **Challenge: Delete the compromised VM**
 
 Delete the compromised VM **cc-app-01**.
@@ -353,7 +354,7 @@ Delete the compromised VM **cc-app-01**.
 Click **Check my progress** to verify that you have completed this task correctly.
 
     Delete the compromised VM
-
+![5  Delete VM 1](https://github.com/user-attachments/assets/db7ebf2e-7d96-402d-9d5c-036879bf929e)
 By following these steps, you have effectively created a new VM from the snapshot, ensuring it is free from malware and misconfigurations. You also deleted the compromised VM, eliminating the source of the security breach.
 
 # Task 3. Fix Cloud Storage bucket permissions
@@ -361,15 +362,15 @@ By following these steps, you have effectively created a new VM from the snapsho
 In this task, you'll revoke public access to the storage bucket and switch to uniform bucket-level access control, significantly reducing the risk of data breaches. By removing all user permissions from the storage bucket, you can prevent unauthorized access to the data stored within.
 
   1. In the **Navigation menu (navigation_menu)**, select **Cloud Storage > Buckets**. The Buckets page opens.
-     
+  ![1  Navigate to Bucket](https://github.com/user-attachments/assets/72d5a908-eadd-4a60-b639-335090a84526)
   2. Click the **project_id_bucket** storage bucket link. The Bucket details page opens.
-
+  ![2  Project Public](https://github.com/user-attachments/assets/1ca64625-133e-497e-a7e5-ce40f484eba6)
 You'll note there is a **myfile.csv** file in the publicly accessible bucket. This is the file that contains the sensitive information that was dumped by the malicious actor. Perform the following steps to address the **Public bucket ACL** finding.
 
   3. Click the **Permissions** tab.
-     
+  ![3  Permission Tab](https://github.com/user-attachments/assets/401d87ef-f57f-483d-aac9-f6fbfda70ad7)
   4. In the **Public access** tile, click **Prevent public access**.
-     
+  ![4  Prevent Public Access](https://github.com/user-attachments/assets/10b56652-7127-4da6-b061-c8a16fe1fb8c)
   5. Click **Confirm**.
 
 **Challenge: Modify storage bucket access**
@@ -379,7 +380,8 @@ Switch the access control to uniform and remove permissions for the **allUsers**
 Click **Check my progress** to verify that you have completed this task correctly.
 
     Modify storage bucket access.
-
+![5  Edit Access Control](https://github.com/user-attachments/assets/7f78ef46-520e-4800-bfba-0d150ea7cb3d)
+![6  Remove Permission](https://github.com/user-attachments/assets/f9d1c0e6-23b5-4f5e-80f0-c8ac56751e38)
 By following these steps, you have effectively prevented public access to the bucket, switched to uniform bucket-level access control, and removed all user permissions, addressing the **Public bucket ACL, Bucket policy only disabled,** and **Bucket logging disabled findings**.
 
 # Task 4. Limit firewall ports access
