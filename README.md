@@ -45,65 +45,26 @@ You’re a junior cloud security analyst at Cymbal Retail—a global retailer wi
      
 **Before you click Start Lab**
       
-Read these instructions. Labs are timed and you cannot pause them. The timer, which starts when you click **Start Lab**, shows how long Google Cloud resources will be made 
-available to you.
+**1. Preparation:**
 
-This practical lab lets you do the activities yourself in a real cloud environment, not in a simulation or demo environment. It does so by giving you new, temporary 
-credentials that you use to sign in and access Google Cloud for the duration of the lab.
+- Use Incognito mode to avoid conflicts with personal accounts.
+- Do not use your personal Google Cloud account to avoid extra charges.
 
-To complete this lab, you need:
+**2. Starting the Lab:**
 
-  * Access to a standard internet browser (Chrome browser recommended).
+- Click Start Lab.
+- Copy the Google Cloud username and password from the Lab Details panel.
+- Open the Google Cloud console (use an incognito window for Chrome).
+- Sign in with the provided credentials (do not use your personal account).
 
-        Note: Use an Incognito or private browser window to run this lab. This prevents any conflicts between your personal account and the Student account, which may cause 
-        extra charges incurred to your personal account.
+**3. Sign-in Process:**
 
-  * Time to complete the lab---remember, once you start, you cannot pause a lab.
+- Paste the Google Cloud username and password.
+- Accept the terms and conditions, but do not add recovery options or sign up for trials.
+- Wait for the Console to load.
 
-        Note: If you already have your own personal Google Cloud account or project, do not use it for this lab to avoid extra charges to your account.
-
-**How to start your lab and sign in to the Google Cloud console**
-
-**1.** Click the **Start Lab** button. On the left is the **Lab Details** panel with the following:
-
-  * Time remaining
-  * The **Open Google Cloud console** button
-  * The temporary credentials that you must use for this lab
-  * Other information, if needed, to step through this lab
-     
-        Note: If you need to pay for the lab, a pop-up opens for you to select your payment method.
-
-**2.** Click Open **Google Cloud console** (or right-click and select **Open Link in Incognito Window**) if you are running the Chrome browser. The **Sign in** 
-  page opens in a new browser tab.
-
-        Tip: You can arrange the tabs in separate, side-by-side windows to easily switch between them.
-
-        Note: If the Choose an account dialog displays, click Use Another Account. 
+Once done, you’re ready to begin your tasks in the Google Cloud console.
         
-**3.** If necessary, copy the **Google Cloud username** below and paste it into the **Sign in** dialog. Click **Next**.
-
-   "Google Cloud username"
-
-You can also find the **Google Cloud username** in the **Lab Details** panel.
-   
-**4.** Copy the **Google Cloud password** below and paste it into the **Welcome** dialog. Click **Next**.
-
-   "Google Cloud password"
-
-You can also find the **Google Cloud username** in the **Lab Details** panel.
-
-        Important: You must use the credentials the lab provides you. Do not use your Google Cloud account credentials.
-
-        Note: Using your own Google Cloud account for this lab may incur extra charges.
-
-**5.** Click through the subsequent pages:
-  
-  * Accept the terms and conditions
-  * Do not add recovery options or two-factor authentication (because this is a temporary account)
-  * Do not sign up for free trials
-
-After a few moments, the Console opens in this tab.
-
         Note: You can view the menu with a list of Google Cloud Products and Services by clicking the Navigation menu at the top-left.
    
  ![Image](https://github.com/user-attachments/assets/dfaaf2e9-f92b-4bf2-8c38-09396e887d11)
