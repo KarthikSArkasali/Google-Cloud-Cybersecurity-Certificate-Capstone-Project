@@ -1,27 +1,26 @@
 # Respond and Recover from a data breach
 
-**Project Overview**
-
+## Project Overview
 Secured a Google Cloud environment by hardening VM configurations, applying least‑privilege IAM policies, locking down Storage buckets, and tightening firewall rules. Implemented real‑time threat detection with Security Command Center, automated VM recovery via snapshots and Secure Boot, and enforced audit‑ready logging. Demonstrated end‑to‑end breach response—triage, contain, remediate, and verify compliance—proving readiness for cybersecurity roles.
 
-**Key Skills Demonstrated**
+## Key Skills Demonstrated
 
   * **Google Cloud Security Fundamentals:** Understanding of Google Cloud security architecture and services such as IAM, Cloud Security Command Center, and VPC Security.
   * **Threat Detection & Response:** Implementing security monitoring, logging, and alerting systems to detect and respond to security incidents.
   * **Cloud Infrastructure Security:** Securing cloud-based resources, including virtual machines, storage, and network configurations.
   * **Best Practices:** Applying industry-standard security practices to ensure a secure cloud environment.
 
-**Why This Project Matters**
+## Why This Project Matters
 
 This capstone validates my Google Cloud Cybersecurity skills with hands‑on experience securing environments and remediating risks. It’s a standout proof of my readiness to protect digital assets and a key differentiator in my pursuit of a cloud security role.
 
-**Project Components**
+## Project Components
 
   * **Infrastructure Setup:** Configured Google Cloud services, set up network security, and implemented robust access controls.
   * **Monitoring & Logging:** Enabled real-time monitoring and logging to detect and investigate potential threats.
   * **Incident Response:** Developed processes to handle security incidents, ensuring rapid detection and mitigation.
 
-   **Activity overview**
+## Activity overview
 
 Apply cloud security expertise in Google Cloud Security Command Center to:
 
@@ -31,7 +30,7 @@ Apply cloud security expertise in Google Cloud Security Command Center to:
 
 Demonstrate your ability to secure a Google Cloud environment and bolster its defenses against data breaches and unauthorized access.
 
-   **Scenario**
+## Scenario**
 
 You’re a junior cloud security analyst at Cymbal Retail—a global retailer with 170 stores and an online platform. After a major data breach exposed customer data, your team must:
 
@@ -41,9 +40,8 @@ You’re a junior cloud security analyst at Cymbal Retail—a global retailer wi
 4. **Harden Network:** Lock down RDP/SSH firewall rules and enable logging.
 5. **Verify:** Run compliance reports to confirm all high‑risk vulnerabilities are resolved.
 
-**Setup**
-     
-**Before you click Start Lab**
+## Setup
+### Before you click Start Lab
       
 **1. Preparation:**
 
