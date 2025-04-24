@@ -2,12 +2,7 @@
 
 **Project Overview**
 
-  In this capstone project, I’ve tackled a cloud security challenge that involves securing Google Cloud infrastructure, implementing threat detection, and applying industry 
-  best practices. The project involves hands-on tasks such as securing virtual machines, configuring firewalls, implementing IAM policies, and setting up monitoring and 
-  logging for proactive security measures.
-
-  The goal of this project is not only to showcase my technical skills but also to demonstrate my ability to apply cloud security principles to real-world cloud 
-  environments. By successfully completing this project, I can highlight my readiness for cybersecurity roles and present a well-rounded portfolio during job interviews.
+Secured a Google Cloud environment by hardening VM configurations, applying least‑privilege IAM policies, locking down Storage buckets, and tightening firewall rules. Implemented real‑time threat detection with Security Command Center, automated VM recovery via snapshots and Secure Boot, and enforced audit‑ready logging. Demonstrated end‑to‑end breach response—triage, contain, remediate, and verify compliance—proving readiness for cybersecurity roles.
 
 **Key Skills Demonstrated**
 
@@ -18,11 +13,7 @@
 
 **Why This Project Matters**
 
-  This capstone project is a great way to showcase what I have learned from the Google Cloud Cybersecurity Certificate and to provide tangible evidence of my cloud security 
-  expertise. It's a practical demonstration of my ability to secure cloud environments and make informed decisions to protect organizations' digital assets.
-
-  Completing this project is a proud milestone in my cloud security journey and serves as a competitive advantage in the job market. It is a crucial step in my goal to enter 
-  the cybersecurity field and contribute to building secure, scalable cloud solutions.
+This capstone validates my Google Cloud Cybersecurity skills with hands‑on experience securing environments and remediating risks. It’s a standout proof of my readiness to protect digital assets and a key differentiator in my pursuit of a cloud security role.
 
 **Project Components**
 
@@ -32,34 +23,23 @@
 
    **Activity overview**
 
-     This lab is part of the capstone project. In this lab, you’ll apply your knowledge of cloud cybersecurity to identify and remediate vulnerabilities.
+Apply cloud security expertise in Google Cloud Security Command Center to:
 
-     You’ll be given a scenario, and a set of tasks to complete in Google Cloud Security Command Center. These tasks will require you to use your skills to work to analyze 
-     and remediate active vulnerabilities relating to a security incident, answer questions about the vulnerabilities, and complete challenges that will assess your cloud 
-     cybersecurity skills.
+- Analyze and remediate active vulnerabilities from a breach scenario
+- Complete guided tasks and independent challenges
+- Identify, prioritize, and fix misconfigurations in VMs, Storage, firewall, and IAM
 
-     There are also a number of challenges in the lab. A challenge is a task where you will be asked to complete the task on your own without instructions.
-
-     By successfully completing this lab, you will demonstrate your ability to identify, prioritize, and remediate security vulnerabilities and misconfigurations within the 
-     cloud environment. These are essential skills to enhance the security posture of Google Cloud environments, reducing the risk of data breaches, unauthorized access, and 
-     other security incidents.
+Demonstrate your ability to secure a Google Cloud environment and bolster its defenses against data breaches and unauthorized access.
 
    **Scenario**
 
-     For the last year, you've been working as a junior cloud security analyst at Cymbal Retail. Cymbal Retail is a market powerhouse currently operating 170 physical stores 
-     and an online platform across 28 countries. They reported $15 billion in revenue in 2022, and currently employ 80,400 employees across the world.
+You’re a junior cloud security analyst at Cymbal Retail—a global retailer with 170 stores and an online platform. After a major data breach exposed customer data, your team must:
 
-     Cymbal Retail boasts a vast customer base with a multitude of transactions happening daily on their online platform. The organization is committed to the safety and 
-     security of its customers, employees, and its assets, ensuring that its operations meet internal and external regulatory compliance expectations in all the countries it 
-     operates in.
-
-     Recently, the company has experienced a massive data breach. As a junior member of the security team, you’ll help support the security team through the lifecycle of 
-     this security incident. You'll begin by identifying the vulnerabilities related to the breach, isolate and contain the breach to prevent further unauthorized access, 
-     recover the compromised systems, remediate any outstanding compliance related issues, and verify compliance with frameworks.
-
-     Here’s how you'll do this task: First you’ll examine the vulnerabilities and findings in Google Cloud Security Command Center. Next, you’ll shut the old VM 
-     down, and create a new VM from a snapshot. Then, you’ll evoke public access to the storage bucket and switch to uniform bucket-level access control. Next, 
-     you’ll limit the firewall ports access and fix the firewall rules. Finally, you’ll run a report to verify the remediation of the vulnerabilities.
+1. **Assess:** Review findings in Google Cloud Security Command Center.
+2. **Contain & Recover:** Shut down the compromised VM, spin up a clean VM from snapshot.
+3. **Remediate Storage:** Remove public access and enforce uniform bucket‑level controls.
+4. **Harden Network:** Lock down RDP/SSH firewall rules and enable logging.
+5. **Verify:** Run compliance reports to confirm all high‑risk vulnerabilities are resolved.
 
 **Setup**
      
