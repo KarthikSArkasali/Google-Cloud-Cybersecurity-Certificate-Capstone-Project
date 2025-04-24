@@ -30,7 +30,7 @@ Apply cloud security expertise in Google Cloud Security Command Center to:
 
 Demonstrate your ability to secure a Google Cloud environment and bolster its defenses against data breaches and unauthorized access.
 
-## Scenario**
+## Scenario
 
 You’re a junior cloud security analyst at Cymbal Retail—a global retailer with 170 stores and an online platform. After a major data breach exposed customer data, your team must:
 
