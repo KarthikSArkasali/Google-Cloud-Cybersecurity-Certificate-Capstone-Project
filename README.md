@@ -69,13 +69,9 @@ Once done, you’re ready to begin your tasks in the Google Cloud console.
 
 # Task 1. Analyze the data breach and gather information
 
-  One morning, the security team detects unusual activity within their systems. Further investigation into this activity quickly reveals that the company has suffered a 
-  massive security breach across its applications, networks, systems, and data repositories. Attackers gained unauthorized access to sensitive customer information, 
-  including credit card data, and personal details. This incident requires immediate attention and thorough investigation. The first step towards understanding the scope 
-  and impact of this breach is to gather information and analyze the available data.
-
-  In this task, you'll examine the vulnerabilities and findings in Google Cloud Security Command Center to determine how the attackers gained access to the data, and which 
-  remediation steps to take.
+  The security team discovered a major breach affecting applications, systems, and customer data, including credit card info. Immediate investigation is required. 
+  The first step is to analyze findings in Google Cloud Security Command Center to identify how the attackers gained access and determine necessary remediation 
+  actions.
 
         Important: The vulnerabilities listed in this section rely on specific security checks being run beforehand. If some checks haven't run yet, the related 
         vulnerabilities might not appear in the Security Command Center when you complete the steps in this section. Don't worry though! You can still use the information 
